@@ -4,31 +4,22 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Outfit', sans-serif;
-    background-color: #f7f7f7;
-   
-    height: 100vh;
-    margin: 0;
-}
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 100%;
     padding: 20px;
+}
+.col {
+    padding: 0 !important;
 }
 
 .card {
-    background-color: white;
-    border-radius: 15px;
-    width: 300px;
-    overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin: 15px;
+    margin: 0 !important;
+    border: 0;
+}
+.card-img-top {
+    border-radius: 29px 29px 0 0;
 }
 
 .card:hover {
@@ -36,34 +27,6 @@ body {
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
 }
 
-.card-img-top {
-    border-radius: 10px 10px 0 0;
-    max-height: 250px;
-    object-fit: cover;
-}
-
-.card-body {
-    padding: 15px;
-}
-
-.card-title {
-    font-weight: bold;
-    font-size: 1.25rem;
-    text-align: center;
-}
-
-.card-description {
-    text-align: center;
-    font-size: 0.9rem;
-    color: #555;
-}
-
-@media (max-width: 768px) {
-    .card {
-        width: 90%;
-        margin: 10px;
-    }
-}
 .fundo1 {
     background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9f907c47-2142-4626-a4f1-4137fff20ac2/d9vfnwq-202613df-e7a9-418c-97ed-6c26aeece2b4.png/v1/fill/w_1024,h_768,q_80,strp/monster_high_draculaura_desktop_computer_wallpaper_by_ashleykat_d9vfnwq-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzY4IiwicGF0aCI6IlwvZlwvOWY5MDdjNDctMjE0Mi00NjI2LWE0ZjEtNDEzN2ZmZjIwYWMyXC9kOXZmbndxLTIwMjYxM2RmLWU3YTktNDE4Yy05N2VkLTZjMjZhZWVjZTJiNC5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.6vgd24HfocJfZC2bGLGamfccY3HLSYon7nTCCekQGw4');
     background-size: cover;
@@ -98,8 +61,7 @@ body {
 }
 .draculaura {
     color: #ea0f8b;    
-    padding: 30px;
-    border-radius: 10px;
+    padding: 30px;  
 }
 
 .ghoulia {
