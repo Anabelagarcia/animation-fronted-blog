@@ -1,4 +1,3 @@
-/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
@@ -8,9 +7,7 @@
 body {
     font-family: 'Outfit', sans-serif;
     background-color: #f7f7f7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
     height: 100vh;
     margin: 0;
 }
@@ -18,8 +15,10 @@ body {
 .container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
 }
 
 .card {
@@ -29,6 +28,7 @@ body {
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 15px;
 }
 
 .card:hover {
@@ -36,72 +36,96 @@ body {
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
 }
 
-.card-image {
-    width: 100%;
-    height: 200px;
+.card-img-top {
+    border-radius: 10px 10px 0 0;
+    max-height: 250px;
     object-fit: cover;
 }
 
-.card-info {
-    padding: 20px;
+.card-body {
+    padding: 15px;
 }
 
-.card-info h2 {
-    font-size: 20px;
-    font-weight: 700;
-    color: #2f2f2f;
-    margin-bottom: 10px;
+.card-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-align: center;
 }
 
 .card-description {
-    font-size: 14px;
-    color: #6e6e6e;
-    margin-bottom: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
 }
 
-.card-details {
-    display: flex;
-    justify-content: space-between;
-}
-
-.detail-item {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    color: #6e6e6e;
-}
-
-.detail-item img {
-    width: 12px;
-    height: 12px;
-    margin-right: 5px;
-}
-
-.author {
-    display: flex;
-    align-items: center;
-    padding: 15px 20px;
-    background-color: #f7f7f7;
-    border-top: 1px solid #e7e7e7;
-}
-
-.author-image {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-.author-name {
-    font-size: 14px;
-    font-weight: 700;
-    color: #2f2f2f;
-}
-
-/* Responsividade para telas pequenas */
 @media (max-width: 768px) {
     .card {
         width: 90%;
         margin: 10px;
     }
+}
+.fundo1 {
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9f907c47-2142-4626-a4f1-4137fff20ac2/d9vfnwq-202613df-e7a9-418c-97ed-6c26aeece2b4.png/v1/fill/w_1024,h_768,q_80,strp/monster_high_draculaura_desktop_computer_wallpaper_by_ashleykat_d9vfnwq-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzY4IiwicGF0aCI6IlwvZlwvOWY5MDdjNDctMjE0Mi00NjI2LWE0ZjEtNDEzN2ZmZjIwYWMyXC9kOXZmbndxLTIwMjYxM2RmLWU3YTktNDE4Yy05N2VkLTZjMjZhZWVjZTJiNC5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.6vgd24HfocJfZC2bGLGamfccY3HLSYon7nTCCekQGw4');
+    background-size: cover;
+    background-position: center;
+}
+.fundo2 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyRFPvVhQglBC8yCDIa11zT6EDJtYcZ5BQYw&s');
+    background-size: cover;
+    background-position: center;
+}
+.fundo3 {
+    background-image: url('https://img.freepik.com/fotos-premium/fundo-listrado-preto-e-roxo-com-listras_969100-12919.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.fundo4 {
+    background-image: url('https://wallpapers.com/images/hd/monster-high-1280-x-1024-wallpaper-tck3nz1bwp40mrm6.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.fundo5 {
+    background-image: url('https://aboutmonsterhigh.wordpress.com/wp-content/uploads/2013/01/abbey-bominable-cartoon-network-wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.fundo6 {
+    background-image: url('https://aboutmonsterhigh.wordpress.com/wp-content/uploads/2013/01/lagoona-blue-cartoon-network-wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.draculaura {
+    color: #ea0f8b;    
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.ghoulia {
+    color: #4b9b94; 
+}
+
+.cleo {
+    color: #f7d602; 
+}
+
+.frankie {
+    color: #5dbcf5; 
+}
+
+.lagoona {
+    color: #7ec8d5; 
+}
+
+.deuce {
+    color: #1e8b3d; 
+}
+
+.abbey {
+    color: #fbfbfb; 
+}
+
+.clawdeen {
+    color: #7d33bf; 
 }
