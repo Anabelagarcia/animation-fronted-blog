@@ -10,4 +10,5 @@ Cardlist é um projeto de demonstração que exibe cards de informações em uma
 ## Como Rodar o Projeto
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/cardlist.git
+   git clone https://anabelagarcia.github.io/animation-fronted-blog/
+   
