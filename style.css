@@ -91,3 +91,13 @@
 .clawdeen {
     color: #7d33bf; 
 }
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
